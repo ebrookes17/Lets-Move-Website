@@ -1,0 +1,458 @@
+* {
+	font-family: verdana;
+	padding:0;
+    margin:0;
+}
+
+.title-bar {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #0097b5;
+	height: 50px;
+	float: left;
+	display: block;
+	z-index: 1;
+}
+.title-bar h1 {
+	padding-top: 11px;
+	padding-left: 16px;
+	font-size: 24px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+.title-bar h1 a:link, a:hover, h1 a:active, h1 a:visited {
+	background-color: #0097b5;
+	color: white;
+	text-decoration: none;
+}
+.sign-up-nav-button {
+	position: absolute;
+	top: 10px;
+	right: 2%;
+	background-color: #006478;
+	border: none;
+	color: white;
+	padding: 6px 12px;
+	text-align: center;
+	font-size: 15px;
+	cursor: pointer;
+	text-decoration: none;
+	border: 1px white solid; 
+	border-radius: 8px;
+	font-weight: bold;
+}
+.sign-up-nav-button:hover {
+	transition: ease 0.5s;
+	font-size: 16px;
+
+}
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: #333;
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	float: left;
+	display: flex;
+	justify-content: space-around;
+	z-index: 1;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+	background-color: #333;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 17px 10px;
+	text-decoration: none;
+	font-size: 15px;
+	width: 12vw;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #333;
+	color: #0097b5;
+	cursor: pointer;
+}
+.dropbtn {
+	background-color: #333;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 17px 10px;
+	text-decoration: none;
+	font-size: 15px;
+	border: none;
+	cursor: pointer;
+	height: 50px;
+	width: 12vw;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80%;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	background-color: #333;
+	color: white;
+	padding: 19px 10px;
+	text-decoration: none;
+	display: block;
+	width: 12vw;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #333;
+	color: #0097b5;
+	cursor: pointer;
+	}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+ 	background-color: #333;
+	color: #0097b5;
+	cursor: pointer;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+	background-color: #0097b5;
+	color: white;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	color: #333;
+}
+.top-img {
+	position: relative;
+	text-align: center;
+	color: white;
+	z-index: 0;
+	padding-top: 100px;
+
+}
+.top-img img {
+	width: 100%;
+	height: 40vw;
+	min-height: 340px;
+
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 3.5vw;
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-shadow: 4px 4px 4px #000000;
+	white-space: nowrap;
+
+}
+.sign-up-button {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #0097b5;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 1.2vw;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 16px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+
+}
+.sign-up-button:hover {
+	transition: ease 0.5s;
+	background-color: #006478;
+	font-size: 1.25vw;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+}
+.bottom-section {
+	width: 100%;
+	background-color: #333;
+	padding-top: 46px;
+	padding-bottom: 200px;
+	margin-top: -4px;
+}
+.grid-items {
+	display: grid;
+	background-color: #333;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-items: center;
+}
+.grid-item1 {
+	background-color: hsl(190, 100%, 35%, 0.9);
+	width: 100%;
+	height: 20vw;
+	transition: .5s ease;
+}
+.grid-item1 p {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 1vw;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 1.1vw;
+	vertical-align: center;
+	line-height: 2vw;
+	
+}
+.grid-item2 {
+	background-image: url("grid-img1.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: 30% 30%;
+	width: 100%;
+	height: 20vw;
+	cursor: pointer;
+	transition: .5s ease;
+}
+.grid-item2 p {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 1.4vw;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 0.4vw;
+	vertical-align: center;
+}
+.grid-item2:hover {
+	opacity: 0.5;
+}
+.grid-item3 {
+	background-image: url("grid-img4.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: 50% 25%;
+	width: 100%;
+	height: 20vw;
+	transition: .5s ease;
+}
+
+.grid-item4 {
+	background-image: url("grid-img3.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: 50% 50%;
+	width: 100%;
+	height: 20vw;
+	transition: .5s ease;
+}
+.grid-item5 {
+	background-image: url("grid-img2.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: 50% 0;
+	width: 100%;
+	height: 20vw;
+	cursor: pointer;
+	transition: .5s ease;
+}
+.grid-item5:hover {
+	opacity: 0.5;
+}
+.grid-item5 p {
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	font-size: 12vw;
+	padding-left: 8%;
+	padding-right: 20%;
+	padding-top: 6vw;
+	vertical-align: center;
+	line-height: 1vw;
+}
+.grid-item6 {
+	background-color: hsl(190, 100%, 35%, 0.9);
+	width: 100%;
+	height: 20vw;
+	transition: .5s ease;
+}
+.grid-item6 p {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 1vw;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 1vw;
+	vertical-align: center;
+	line-height: 2vw;
+}
+@media only screen and (max-width: 600px) {
+	.grid-items {
+		display: grid;
+		background-color: #333;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		justify-items: center;
+	}
+	.grid-item1 {
+		height: 70vw;
+	}
+	.grid-item1 p {
+		font-size: 4vw;
+		line-height: 6vw;
+		margin-top: 6.9vw;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.grid-item2 {
+		height: 70vw;
+		
+	}
+	.grid-item2 p {
+		font-size: 4vw;
+		line-height: 6vw;
+		margin-top: 2.6vw;
+		padding-left: 10%;
+		padding-right: 10%;
+	}	
+	.grid-item3 {
+		height: 70vw;
+		background-image: url("grid-img3.jpg");
+		background-size: cover;
+		background-repeat:no-repeat;
+		background-position: 50% 50%;
+	}
+	.grid-item4 {
+		height: 70vw;
+		background-image: url("grid-img4.jpg");
+		background-size: cover;
+		background-repeat:no-repeat;
+		background-position: 50% 25%;
+	}
+	.grid-item5 {
+		height: 70vw;
+	}
+	.grid-item5 p {
+		font-size: 4vw;
+		line-height: 6vw;
+		margin-top: 10vw;
+		padding-left: 7%;
+		padding-right: 10%;
+		font-size: 36vw;
+	}	
+	.grid-item6 {
+		height: 70vw;
+	}
+	.grid-item6 p {
+		font-size: 4vw;
+		line-height: 6vw;
+		margin-top: 6.9vw;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+h1 { 
+	padding-top: 50px;
+	padding-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #333;
+}
+h2 {
+	font-size: 70px;
+	color: #0097b5;
+	text-shadow: 2px 2px black;
+}
+.sign-up-button-2 {
+	background-color: #0097b5;
+	border: none;
+	color: white;
+	margin-bottom: 2vw;
+	padding: 3vw;
+	text-align: center;
+	font-size: 2.1vw;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+	width: 100%;
+	animation-name: color-change;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+
+}
+.sign-up-button-2:hover {
+	transition: ease 0.5s;
+	background-color: #006478;
+	font-size: 2.15vw;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+}
+@keyframes color-change {
+	0%   {
+		background-color: #0097b5;
+	}
+	50%  {
+		background-color: #005363;
+	}
+}
+.footer {
+	position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 2vw 0;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 24px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 2px;
+  background-color: #0097b5;
+  border-radius: 50%;
+  color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+   background-color: #333;
+}
+
+#content-wrap {
+  padding-bottom: 16vw;    /* Footer height */
+}

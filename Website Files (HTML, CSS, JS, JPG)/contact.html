@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Let's Move Studio</title>
+
+<link rel="stylesheet" href="contact-styles.css">
+<!-- for social media icons: -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="lastModifiedDate.js" defer></script>
+
+</head>
+
+<body onload="lastModifiedDate()">
+<div id="page-container">
+   <div id="content-wrap">
+	<div class="title-bar">
+		<h1><a href="index.html">Let's Move Studio</a></h1>
+		<button class="sign-up-nav-button" onclick="window.location.href = 'sign-up.html';">Sign up form >></button>
+	</div>
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="about-us.html">About Us</a>
+		<div class="dropdown">
+				<button class="dropbtn">Classes▼</button>
+				<div class="dropdown-content">
+					<a href="classes-dance.html">Dance</a>
+					<a href="classes-yoga.html">Yoga</a>
+					<a href="classes-fitness.html">Fitness</a>
+				</div>
+			</div>
+		<a href="schedule.html">Schedule</a>
+		<a href="instructors.html">Instructors</a>
+		<a href="prices.html">Prices</a>
+		<a class="active" href="contact.html">Contact</a>
+		<a href="cross-references.html">Reference Page</a>
+	</div>
+	<div class="main">
+	
+	<div class="top-img">
+		<img src="contact-img.jpg" alt="Kamloops">
+		<div class="centered">Visit Us Today</div>
+	</div>
+	
+	<h1>Contact Information</h1>
+
+	<h3><span style="color: #0097b5">Email: </span>letsmoveevents@gmail.com<br><span style="color: #0097b5">Phone:</span> 250-372-9642<br><span style="color: #0097b5">Address:</span> 831 Victoria St, Kamloops, BC V2C 2B7, Canada</h3>
+    <!--The div element for the map -->
+    <div id="map" style="width:100%;height:400px;"></div>
+    <script>
+// Initialize and add the map
+function myMap() {
+
+  var studio = {lat: 50.675425, lng: -120.320323};
+
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 16, center: studio});
+
+  var marker = new google.maps.Marker({position: studio, map: map});
+}
+    </script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7AcIfb81QOwYKN9F-TMXXok1tDLRvas4&callback=myMap"></script>
+	</div>
+
+<div id="footer-break"></div>
+<div class="footer">
+  <p>Let's Move Studio</p>
+  <p>Kamloops, BC</p>
+	<a href="https://www.facebook.com/Lets-Move-Studio-145279692151687/" class="fa fa-facebook"></a>
+	<a href="https://twitter.com/letsmovestudio" class="fa fa-twitter"></a>
+	<a href="https://www.instagram.com/letsmovestudio/" class="fa fa-instagram"></a>
+	<p>Last modified: </p>
+	<p id="lm"></p>
+	
+	<p><a href="http://jigsaw.w3.org/css-validator/check/referer">
+	<img style="border:0;width:88px;height:31px;padding-top:16px;"
+	src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+	alt="Valid CSS!" />
+	</a></p>
+
+</div>
+</div>
+</div>
+</body>
+</html>

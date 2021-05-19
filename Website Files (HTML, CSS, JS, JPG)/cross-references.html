@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cross References | Let's Move Studio</title>
+
+<link rel="stylesheet" href="reset.css">
+<!-- for social media icons: -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="lastModifiedDate.js" defer></script>
+
+</head>
+
+<body onload="lastModifiedDate()">
+<div id="page-container">
+   <div id="content-wrap">
+	<div class="title-bar">
+		<h1><a href="index.html">Let's Move Studio</a></h1>
+		<button class="sign-up-nav-button" onclick="window.location.href = 'sign-up.html';">Sign up form >></button>
+	</div>
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="about-us.html">About Us</a>
+			<div class="dropdown">
+				<button class="dropbtn">Classes▼</button>
+				<div class="dropdown-content">
+					<a href="classes-dance.html">Dance</a>
+					<a href="classes-yoga.html">Yoga</a>
+					<a href="classes-fitness.html">Fitness</a>
+				</div>
+			</div>
+		<a href="schedule.html">Schedule</a>
+		<a href="instructors.html">Instructors</a>
+		<a href="prices.html">Prices</a>
+		<a href="contact.html">Contact</a>
+		<a class="active" href="cross-references.html">Reference Page</a>
+	</div>
+
+	<div class="main">
+
+	<h1>Cross References<h1>
+	
+	<dl>
+		<dt>2.1 - 9 Web Sites in total are required from 9 different domains.</dt>
+			<p>3 Web Sites – Similar sites to your site, re: similar business nature</p>
+			<dd><a href="http://youryogaloft.com/">http://youryogaloft.com</a> - I like how clean this website looks, and I like the layout of the home page so I want to create something similar.<br>
+			<a href="https://www.goldsgym.com/">https://www.goldsgym.com</a> - I like how engaging the home page of this website is.<br>
+			<a href="https://kamloopscrossfitapostle.ca/">https://kamloopscrossfitapostle.ca</a> - I love the layout and feel of the home page of this website. I also like the colours used.</dd>
+			<p>3 Web Sites – Downloadable Sites</p>
+			<dd><a href="https://unsplash.com/">https://unsplash.com</a> - This web site is full of freely usable images, many of which I plan to use for my web site.<br>
+			<a href="https://www.itunes.com">https://www.itunes.com</a> - There a ton of music and sound files to be found here, and it is easy to find what you are looking for.<br>
+			<a href="http://youtube.com">http://youtube.com</a> - This web site has an enormous amount of videos, which makes it easy to find something that is relevant to your web site.</dd>
+			<p>3 Web Sites – Technical Information</p>
+			<dd><a href="https://www.w3schools.com/">https://www.w3schools.com</a> - W3Schools contains a wealth of information relevant to web designers. The validators are also very useful.<br>
+			<a href="https://css-tricks.com/">https://css-tricks.com</a> - CSS Tricks features many different ways to create and style things with CSS, and some are quite clever.<br>
+			<a href="https://www.tutorialspoint.com/html/index.htm">https://www.tutorialspoint.com/html/index.htm</a> - As the name suggests, this web site has many HTML tutorials and tips for web design.</dd>
+		<dt>2.2 Cross Reference Page</dt>
+			<dd><a href="cross-references.html">This current page</a>, complete with descriptions, hyperlinks to relevant web pages, and references to relevant lines of code.</dd>
+		<dt>2.3 Web Site Design</dt>
+			<dd>I tried to make the pages of my web site link together in meaningful ways in order to establish a flow. For example, while looking at the <a href="classes-yoga.html">class descriptions</a>,
+			it shows which instructor teaches which	class, and there are links to the <a href="instructors.html">instructor page</a> from there.</dd>
+		<dt>2.4.1 HTML5</dt>
+			<p>a) Appropriate HTML5 tags, including use of HTML5 structural tags.</p>
+			<dd><a href="schedule.html">schedule.html</a> includes the use of structural tags < html >, < head >, < title >, < body >, < a >, < ul >, < li >, < table >, < tr >, < th >, < td >, and < figcaption >.</dd>
+			<p>b) Inline images both static and clickable.</p>
+			<dd><a href="index.html">index.html</a> has several images that are static, and 2 that are clickable (middle images in 2x3 grid).</dd>
+			<p>c) Use of appropriate special characters.</p>
+			<dd><a href="index.html">every page of the website</a> has the special character "▼" in the navbar beside "classes".</dd>
+			<p>d) Use of appropriate meta tags.</p>
+			<dd>Every html file uses the "meta" tag on line 7 and 8 of the code to specify the charset and viewport.</dd>
+			<p>e) A footer on the home page indicating when the web site was last updated or modified.</p>
+			<dd><a href="index.html">index.html</a> has a footer indicating when the website was last modified using JavaScript (lastModifiedDate.js). I decided to include it in the footer on every webpage as well.</dd>
+		<dt>2.4.2 CSS3</dt>
+			<p>a) Use CSS3 to format the appearance of paragraphs, lists, headers, background images, tables, forms. </p>
+			<dd><a href="schedule.html">schedule.html</a> is styled with "schedule-styles.css" to format the appearance of paragraphs, lists, headers, background images, and tables. 
+			<a href="sign-up.html">sign-up.html</a> is styled with "sign-up-styles.css" which contains styles to format the appearance of forms.</dd>
+			<p>b) Use CSS3 contextual selectors (e1, e2, e3; e f; e > f; e + f) and at least two attribute selectors, excluding class and id attribute selectors.</p>
+			<dd>Contextual selectors: see line 113 ( .dropdown-content a ) and line 218 ( #preferences > label ) of "sign-up-styles.css".<br>
+			Attribute selectors: see line 195 ( input[type=submit] ) of "sign-up-styles.css" and line 208 ( [title~=instructor] ) of "instructors-styles.css".</dd>
+			<p>c) Use of CSS3 styles for color (RGBA & HSLA).</p>
+			<dd><a href="index.html">index.html</a> contains HSLA styling for the background color of the class "grid-item1" on line 217 of "index-styles.css"( hsl(190, 100%, 35%, 0.9); ).<br>
+			<a href="index.html">index.html</a> also contains RGBA styling for the box shadow of the class "sign-up-button-2" on line 405 of "index-styles.css"( 2px 2px 2px rgba(0, 0, 0, .5); ).</dd>
+			<p>d) Use of dynamic pseudo-classes to highlight hyperlinks states of link, visited, active, hover; focus and two structural pseudo-classes: first-of-type and last-oftype.</p>
+			<dd><a href="index.html">index.html</a> contains ( .title-bar h1 a:link, a:hover, h1 a:active, h1 a:visited ) on line 26 of "index-styles.css".<br>
+			<a href="prices.html">prices.html</a> contains ( td:nth-child(even) ) on line 288 of "prices-styles.css".<br>
+			<a href="schedule.html">schedule.html</a> contains ( tr:nth-child(odd) td ) on line 251 of "schedule-styles.css".
+			</dd>
+			<p>e) Use of CSS3 background styles (background size, background-clip, backgroundorigin, padding, margins, borders, use of an appropriate border style, use of rounded corners</p>
+			<dd>
+			<a href="index.html">index.html</a> contains background styles for the class ".grid-item2" on line 234 ( background-image: url("grid-img1.jpg"); background-size: cover; background-repeat:no-repeat;
+			background-position: 30% 30% ) of "index-styles.css".<br>
+			The class "sign-up-nav-button" on line 31 of "index-styles.css" contains border styles and rounded corners ( border: 1px white solid; border-radius: 8px ).<br>
+			Every page of the website has many elements which use padding and border rules but a specific example is the element ".grid-item1 p" on line 330 and 331 ( margin-top: 6.9vw; padding-left: 10%; ) of "index-styles.css".</dd>
+			<p>f) Your home page should have a drop cap created with CSS3.</p>
+			<dd>I was not able to find somewhere on the home page that this actually looked good, so instead I placed it on the page: <a href="about-us.html">about-us.html</a>.</dd>
+			<p>g) Define document content with the class and id properties and create styles for them.</p>
+			<dd>Every style sheet used for this website contains class and ID properties with specific styles, but an example is line 214 ( .description-column ) and line 264 ( #footer-break ) of "classes-styles.css".
+			This can be seen on the web page: <a href="classes-fitness.html">classes-fitness.html</a>.</dd>
+			<p>h) Use cascading styles to control page layout by using either grid, flex, float, positioning.</p>
+			<dd>Flex is used for the "topnav" class of <a href="index.html">index.html</a> on line 61 ( display: flex; ) of "index-styles.css".<br>
+			Grid is used for the "grid-items" class of <a href="index.html">index.html</a> on line 318 ( display: grid; ) of "index-styles.css".<br>
+			Float is used for the "title-bar" class of <a href="index.html">index.html</a> on line 15 ( float: left; ) of "index-styles.css".</dd>
+			<p>i) Use of CSS3 text and box shadows.</p>
+			<dd>Text shadow is used for the "centered" class of <a href="index.html">index.html</a> on line 173 ( text-shadow: 4px 4px 4px #000000; ) of "index-styles.css".<br>
+			Box shadow is used for the "sign-up-button" class of <a href="index.html">index.html</a> on line 192 ( 	box-shadow: 2px 2px 2px rgba(0, 0, 0, .5); ) of "index-styles.css".</dd>
+			<p>j) Use of CSS3 transform rotate feature.</p>
+			<dd>I was not able to find anywhere to use this feature that served a real purpose or looked appealing, so I applied it to the social media icons in the footer of <a href="sign-up.html">sign-up.html</a>
+			on line 244 (   transform: rotate(15deg); ) of "sign-up-styles.css" in order to fulfill this requirement.</dd>
+			<p>k) Use of CSS3 opacity applied to two images to appear semi-transparent.</p>
+			<dd><a href="index.html">index.html</a> contains two images with this property: the two center images of the 2x3 grid when the mouse hovers on them. See line 254 (	opacity: 0.5; ) and line 286
+			 ( 	opacity: 0.5; ) of "index-styles.css".</dd>
+		<dt>2.4.3 Web Form</dt>
+			<p>a) Use of appropriate form elements including some of the new HTML5 form elements.</p>
+			<dd><a href="sign-up.html">sign-up.html</a> contains the features < fieldset >, < label >, < input >, "placeholder:", "required", "pattern:", checkboxes, radio input, field input, comment box, submit and cancel buttons.</dd>
+			<p>b) Apply appropriate styles to Web Forms.</p>
+			<dd>The web form on <a href="sign-up.html">sign-up.html</a> is styled by the stylesheet "sign-up-styles.css" to create an appropriate, readable form style.</dd>
+			<p>c) Apply inline form validation by using the focus pseudo-class to appropriate form elements.</p>
+			<dd>The web form on <a href="sign-up.html">sign-up.html</a> uses the focus psuedo-class on line 206 ( input:focus { background-color: #ebfcff; } ) of "sign-up-styles.css" to help the user understand which field they are filling in.</dd>
+		<dt>2.4.4 Graphical Web Tables</dt>
+		<p>a) Use of graphical web tables to depict relevant data that is appropriate to the business.</p>
+			<dd><a href="schedule.html">schedule.html</a> and <a href="prices.html">prices.html</a> both implement web tables with similar but different designs.</dd>
+		<dt>2.4.5 Multimedia Minimum </dt>
+			<p>a) Use sound, video somewhere on your site. Ensure these are of short duration preferably about 30 seconds.</p>
+			<dd><a href="classes-yoga.html">classes-yoga.html</a> features a 56-second video which is relevant to the website content.</dd>
+			<p>b) Use of transitions and animations</p>
+			<dd>Transitions: <a href="index.html">index.html</a> features transitions on the 2x3 grid of images (when the browser window is resized, even just a little bit, the images slide). This can be found in the 
+			element "grid-item1" on line 219 ( transition: .5s ease; ) of "index-styles.css" (*NOTE: This transition effect is not visible in Internet Explorer). In the same file, the element "sign-up-button" on line 196 ( transition: ease 0.5s; ) uses a transition. This transition 
+			is applied when the button is hovered over with the mouse.<br>
+			Animations: on the same web page, <a href="index.html">index.html</a>, "sign-up-button-2" features an animation where the background color switches infinitely between 2 different colors. 
+			This can be found on line 406 ( animation-name: color-change; animation-duration: 2.5s; animation-iteration-count: infinite; ) of "index-styles.css".</dd>
+		<dt>2.4.6 JavaScript </dt>
+			<p>a) Use of variables, arithmetic, comparison and logical operators, subroutines, functions, arrays, conditional statements, conditional operators, running time commands with system clock.</p>
+			<dd>These features can be found in "lastModifiedDate.js", "formCountDown.js", and "validateForm.js".</dd>
+			<p>b) Use of system date (example: clock, countdown timer to an event) on your web site.</p>
+			<dd><a href="sign-up.html">sign-up.html</a> features a 20-minute countdown clock. The form must be filled out and submitted before the timer expires, or the user will be notified through an alert 
+			(created with JavaScript) and they will be returned to the home page. The JavaScript file is "formCountDown.js".</dd>
+			<p>c) Validating form input by using appropriate JavaScript functions.</p>
+			<dd>The form on <a href="sign-up.html">sign-up.html</a> mainly makes use of the "required" feature of HTML to check if a field has been entered or not, but for the question "*Please select which 
+			rate applies to your purchase: " which uses the "radio" input type, the JavaScript file "validateForm.js" will check if this question has been answered. If no selection has been made, the user will be prompted
+			through an alert that the question must be answered. If it has been answered, and every other field has been filled out, it will notify the user that the form has been successfully submitted and return them to 
+			the home page. Note that the HTML form feature "required" will be checked FIRST, so the alert will not come up if previous fields have not been answered first. Instead, the "this field is required" message will 
+			come up, until those fields have been answered.</dd>
+			<p>d) Use of JavaScript alerts for validation purposes.</p>
+			<dd><a href="sign-up.html">sign-up.html</a> features the alert created in JavaScript which is described in the paragraph above ( 2.4.6 - c) ). The code can be found in "validateForm.js".</dd>
+			<p>e) Use of BOM/DOM in emulating events through the use of event handlers.</p>
+			<dd>The JavaScript file "formCountDown.js" used on <a href="sign-up.html">sign-up.html</a> uses event handlers to check certain conditions, like if the form has been submitted before the countdown has expired.
+			 "validateForm.js" also uses event handlers to check certain conditions.</dd>
+		<dt>2.4.7 Responsive Design </dt>
+			<p>a) Your web site design should implement each of the following responsive techniques on different pages on your web site:</p>
+			<ol>
+				<li>i) CSS Grid Layout using the display: grid</li>
+				<dd>Grid is used for the "grid-items" class of <a href="index.html">index.html</a> on line 318 ( display: grid; ) of "index-styles.css".</dd>
+				<li>ii) CSS Flex Layout using the display: flex</li>
+				<dd>Flex is used for the "topnav" class of <a href="index.html">index.html</a> on line 61 ( display: flex; ) of "index-styles.css".</dd>
+				<li>iii) CSS Positioning </li>
+				<dd>CSS positioning is used for many elements in the style sheets for the website, but a specific example is on the web page <a href="index.html">index.html</a>. The class "title-bar" uses positioning 
+				on line 8 ( position: fixed; ) of "index-styles.css" to keep the nav fixed at the top of the window.</dd>
+			</ol>
+			<p>b) The use of contextual selectors to control sub level menus, including the use of a navicon image for mobile design is required.</p>
+			<dd>Unfortunately, after many failed attempts and hours and hours of trying I was not able to successfully implement this feature in a way that made sense or was visually appealing (the sub-menu "classes"
+			in the navbar in particular gave me trouble when attempting to change the entire navbar into a dropdown with a navicon, while still maintaining that separate sub-menu).</dd>
+		<dt>2.4.8 Call to Action (CTAs)</dt>
+			<p>Your website must include at least three CTAs, in particular, on the homepage of the website.</p>
+			<dd><a href="index.html">index.html</a> features 3 CTAs: a button in the top-right corner of the navbar, a button in the center of the main image, and a large banner-like button at the bottom of the page before
+			the footer. All CTAs encourage the user to sign up at the studio, but are all phrased in different ways. The one at the bottom before the footer mentions that new students receive 20% off.<br>
+			These same CTAs are implemented on almost every page of the website. In particular, the CTA in the top-right corner of the navbar is present on every page because it makes it easy for the user
+			to sign up at the studio, as this button is at the same location on every page.</dd>
+		<dt>2.5 Web Project Documentation</dt>
+			<dd>Front page: see "Front Page.pdf" in the "Documentation" folder.<br>
+			Business statement: see "Business Statement.pdf" in the "Documentation" folder.<br>
+			Project objectives and project description: see "Project Objectives and Description.pdf" in the "Documentation" folder.<br>
+			Explanation of how the business would benefit: see "How Let's Move Studio Would Benefit from This Web Design.pdf" in the "Documentation" folder.<br>
+			Any other relevant documentation: see "Additional Notes.pdf" in the "Documentation" folder.</dd>
+		<dt>2.6 Demonstration Evaluation Form</dt>
+			<dd>See "Evaluation Form.pdf" in the "Documentation" folder.</dd>	
+	</dl>
+	</div>
+
+
+<div id="footer-break"></div>
+<div class="footer">
+  <p>Let's Move Studio</p>
+  <p>Kamloops, BC</p>
+	<a href="https://www.facebook.com/Lets-Move-Studio-145279692151687/" class="fa fa-facebook"></a>
+	<a href="https://twitter.com/letsmovestudio" class="fa fa-twitter"></a>
+	<a href="https://www.instagram.com/letsmovestudio/" class="fa fa-instagram"></a>
+	<p>Last modified: </p>
+	<p id="lm"></p>
+	
+	<p><a href="http://jigsaw.w3.org/css-validator/check/referer">
+	<img style="border:0;width:88px;height:31px;padding-top:16px;"
+	src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+	alt="Valid CSS!" />
+	</a></p>
+
+</div>
+</div>
+</div>
+</body>
+</html>
